@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="Aquí coloco el resumen de lo que contiene la página para su búsqueda en la web">
+	<meta name="keywrds" content="comida peruana, Restaurante">
+	<meta name="autor" content="Leidy Castañeda">
+	<title>Restaurante X - Bienvenido</title>
+</head>
+<body>
+	<a href="nosotros.html" target="_blank">Nosotros</a>
+	<a href="contactenos.html" target="_blank">Contactenos</a>
+	<a href="menu.html" target="_blank">Menú</a>
+	<form id="frmprueba" action="registro.php" method="post" enctype="multipart/form-data">
+		<input type="hidden" name="uid">
+		<input type="texto" name="nombre" placeholder="Ingrese su nombre" minlength="2" maxlength="20" required autocomplete="off">
+		<input type="password" name="Contraseña" autocomplete="off" placeholder="Contraseña" required>
+		<input type="Email" name="Correo" required placeholder="Ingresa correo">
+		<input type="date" name="Fecha" min="2019-04-01" max="2020-04-01" value="2020-03-25">
+		<input type="month" name="Mes">
+		<input type="week" name="Semana">
+		<input type="color" name="color" value="#0000ff">
+		<input type="range" name="rango" step="10">
+		<input type="file" name="archivo" multiple accept=".jpg">
+		<input type="datetime-local" name="fechayhora">
+		<input type="time" name="hora">
+		<input type="number" name="numero">
+		<input type="url" name="url">
+		<input type="tel" name="telefono" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
+		<input type="radio" name="mascota" value="perro" checked=""><label>Perro</label>
+		<input type="radio" name="mascota" value="gato"><label>Gato</label><br>
+
+		<input type="checkbox" name="marca[]" checked value="audi"><label>Audi</label>
+		<input type="checkbox" name="marca[]" value="toyota"><label>Toyota</label>
+		<input type="checkbox" name="marca[]" value="mercedes"><label>Mercedes</label>
+		<textarea name="mensaje" placeholder="Deja tu mensaje" required=""></textarea><br>
+
+		<select name="distritos"  required>
+			<option value="">--Seleccione Opción--</option>
+			<option value="bellavista">Bellavista</option>
+			<option value="callao">Callao</option>
+		</select>
+
+		<select name="distritos[]"  required multiple>
+			<option value="">--Seleccione Opción--</option>
+			<option value="bellavista">Bellavista</option>
+			<option value="callao">Callao</option>
+		</select>
+
+		<select name="distritos" required="">
+			<option value="">--Seleccione Opción--</option>
+			<optgroup label="Callao">
+				<option value="bellavista">Bellavista</option>
+				<option value="puerto">Puerto</option>
+			</optgroup>
+			
+		</select>
+
+
+		<input type="submit" name="Enviar">
+		<input type="reset" name="Limpiar">
+
+		
+	</form>
+	<h1>Etiqueta de título</h1>
+	<h2>Etiqueta de subtítulo</h2>
+	<h3>otra etiqueta de título</h3>
+	<h4>otra etiqueta de título</h4>
+	<h5>otra etiqueta de título</h5>
+	<h6>otra etiqueta</h6>
+	<p>
+		<b>Lorem ipsum dolor</b> sit amet, <strong>consectetur adipiscing elit, sed do eiusmod tempor</strong> incididunt ut labore et dolore magna aliqua. <i>Ut enim ad minim veniam</i>, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<em> Duis aute irure dolor in </em> reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. <big> Excepteur sint occaecat cupidatat non proident,</big> <small> sunt in culpa qui officia deserunt mollit anim id est laborum.</small> 
+	</p>
+	<p>
+		<b>Lorem ipsum dolor</b> <del> sit amet,</del>  consectetur adipiscing elit, sed <mark>  do eiusmod tempor incididunt ut labore et dolore magna aliqua.</mark> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		H<sub>2</sub>O
+		2<sup>3</sup>
+		<blockquote>
+			<span>Este es un bloque de cita</span>, se usa cuando quiero escribir lo que dijo otra persona de manera textual
+		</blockquote>
+	</p>
+	<ul>
+		<li>Pollo a la brasa</li>
+		<li>otro item</li>
+		<li>Nuevo item</li>
+	</ul>
+	<ol start="1">
+		<li>Item 1</li>
+		<li>Item 2</li>
+		<li>Item 3</li>
+		<li>Item 4</li>
+
+	</ol>
+	<ol start="4" reversed type="I">
+		<li>Item 1</li>
+		<li>Item 2</li>
+		<li>Item 3</li>
+		<li>Item 4</li>
+	</ol>
+
+	<ol>
+		<li>Item 1</li>
+		<ol>
+			<li>Item 1.1</li>
+		</ol>
+		<li>Item 2</li>
+		<li>Item 3</li>
+		<li>Item 4</li>
+	</ol>
+	
+	<figure>
+		<img src="img/restaurante.png" alt="Descripción de la imágen" title="Título de la imágen">
+		<figcaption>Este es el texto explicativo de la figura</figcaption>
+	</figure>
+
+	<table border="2" width="100%" cellspacing="10px" cellpadding="10px" bgcolor="yellow">
+		<tr>
+			<th width="10%" height="100" bgcolor="red" style="color: white">DNI</th>
+			<th width="25%">Nombre</th>
+			<th>Email</th>
+		</tr>
+		<tr>
+			<td height="100" align="center">12345678</td>
+			<td>Leidy Castañeda</td>
+			<td>leidy@gmail.com</td>
+		</tr>
+	</table>
+	<table border="2" width="100%" cellspacing="10px" cellpadding="10px" bgcolor="yellow">
+		<tr>
+			<th colspan="2" width="40%" height="100" bgcolor="red" style="color: white">DNI / Nombre</th>
+			
+			<th>Email</th>
+		</tr>
+		<tr>
+			<td rowspan="2" height="100" align="center">12345678</td>
+			<td>Leidy Castañeda</td>
+			<td>leidy@gmail.com</td>
+		</tr>
+		<tr>
+			
+			<td>Johanna Castañeda</td>
+			<td>Johanna@gmail.com</td>
+		</tr>
+	</table>
+
+
+</body>
+</html>
